@@ -16,7 +16,8 @@ import SupportPage from "./landing_page/support/SupportPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  //Wraps the entire application to enable routing. It keeps the UI in sync with the URL.
+   <BrowserRouter>  
     <Navbar />
     <Routes>
       <Route path="/" element={<HomePage />} />
